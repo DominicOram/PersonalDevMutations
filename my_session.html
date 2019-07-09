@@ -1,0 +1,237 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" /><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" /><title>Cosmic Ray Report</title></head><body><div class="container"><h1><p class="text-dark">Cosmic Ray Report</p></h1></div><div class="container"><div class="mb-1" id="summary_info___accordion"><div class="card"><a data-toggle="collapse" data-target="#summary_info___collapse_1" aria-expanded="true" aria-controls="summary_info___collapse_1" href="#"><div class="card-header" id="summary_info___heading_1"><button class="btn btn-outline-dark"><h4 class="m-0">Summary info</h4></button></div></a><div aria-labelledby="summary_info___heading_1" data-parent="#summary_info___accordion" class="collapse show" id="summary_info___collapse_1"><div class="card-body"><p>Date time: 09/07/2019 13:37:34</p><p>Total jobs: 11</p><p>Complete: 11 (100.00%)</p><p>Survival rate: 0.00%</p></div></div></div></div><div class="mb-1" id="job_list___accordion"><div class="card"><a data-toggle="collapse" data-target="#job_list___collapse_1" aria-expanded="false" aria-controls="job_list___collapse_1" href="#"><div class="card-header" id="job_list___heading_1"><button class="btn btn-outline-dark"><h4 class="m-0">Job list</h4></button></div></a><div aria-labelledby="job_list___heading_1" data-parent="#job_list___accordion" class="collapse" id="job_list___collapse_1"><div class="card-body"><div class="text-right mb-1"><div class="mx-1" id="job_item_expand_all"><a href="#" onclick="$('div.job_list___sub_multi_collapse').collapse('show');"><button class="btn btn-outline-dark"><span>Expand All</span></button></a></div><div class="mx-1" id="job_item_collapse_all"><a href="#" onclick="$('div.job_list___sub_multi_collapse').collapse('hide');"><button class="btn btn-outline-dark"><span>Collapse All</span></button></a></div></div><div class="mb-1" id="job_list___sub_accordion_1"><div class="card"><a data-toggle="collapse" data-target="#job_list___sub_collapse_1_1" aria-expanded="false" aria-controls="job_list___sub_collapse_1_1" href="#" class="job_list___sub_multi_heading"><div role="alert" class="card-header alert-success" id="job_list___sub_heading_1_1"><button class="btn btn-outline-success"><span class="job_id">1 : Job ID a70160b5069d422c93e91a082877a6b9</span></button></div></a><div aria-labelledby="job_list___sub_heading_1_1" data-parent="#job_list___sub_accordion_1" class="collapse job_list___sub_multi_collapse" id="job_list___sub_collapse_1_1"><div class="card-body"><div class="work-item"><div class="alert alert-success test-outcome" role="alert"><p>worker outcome: normal</p><p>test outcome: killed</p></div></div><pre class="location"><a href="pycharm://open?file=src\a_function.py&amp;line=2" class="text-secondary"><button class="btn btn-outline-dark">src\a_function.py, start pos: (2, 13), end pos: (2, 14)</button></a></pre><pre>operator: core/ReplaceBinaryOperator_Add_Sub, occurrence: 0</pre><div class="alert alert-secondary"><pre class="diff">--- mutation diff ---
+--- asrc\a_function.py
++++ bsrc\a_function.py
+@@ -1,3 +1,3 @@
+ def add_numbers_and_inc(a, b):
+-    return a + b
++    return a - b
+ </pre></div><div class="alert alert-secondary"><pre class="diff">F..
+======================================================================
+FAIL: test_WHEN_numbers_added_THEN_return_expected_value (test_one.Tests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ffv81422\AppData\Local\Temp\tmphdwmtury\repo\tests\test_one.py", line 16, in test_WHEN_numbers_added_THEN_return_expected_value
+    self.assertEqual(result, 5)
+AssertionError: 1 != 5
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+FAILED (failures=1)
+</pre></div></div></div></div></div><div class="mb-1" id="job_list___sub_accordion_2"><div class="card"><a data-toggle="collapse" data-target="#job_list___sub_collapse_2_1" aria-expanded="false" aria-controls="job_list___sub_collapse_2_1" href="#" class="job_list___sub_multi_heading"><div role="alert" class="card-header alert-success" id="job_list___sub_heading_2_1"><button class="btn btn-outline-success"><span class="job_id">2 : Job ID 5d1dffeadaf84595bcb9e9e34a172d7b</span></button></div></a><div aria-labelledby="job_list___sub_heading_2_1" data-parent="#job_list___sub_accordion_2" class="collapse job_list___sub_multi_collapse" id="job_list___sub_collapse_2_1"><div class="card-body"><div class="work-item"><div class="alert alert-success test-outcome" role="alert"><p>worker outcome: normal</p><p>test outcome: killed</p></div></div><pre class="location"><a href="pycharm://open?file=src\a_function.py&amp;line=2" class="text-secondary"><button class="btn btn-outline-dark">src\a_function.py, start pos: (2, 13), end pos: (2, 14)</button></a></pre><pre>operator: core/ReplaceBinaryOperator_Add_Mul, occurrence: 0</pre><div class="alert alert-secondary"><pre class="diff">--- mutation diff ---
+--- asrc\a_function.py
++++ bsrc\a_function.py
+@@ -1,3 +1,3 @@
+ def add_numbers_and_inc(a, b):
+-    return a + b
++    return a * b
+ </pre></div><div class="alert alert-secondary"><pre class="diff">F..
+======================================================================
+FAIL: test_WHEN_numbers_added_THEN_return_expected_value (test_one.Tests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ffv81422\AppData\Local\Temp\tmphdwmtury\repo\tests\test_one.py", line 16, in test_WHEN_numbers_added_THEN_return_expected_value
+    self.assertEqual(result, 5)
+AssertionError: 6 != 5
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+FAILED (failures=1)
+</pre></div></div></div></div></div><div class="mb-1" id="job_list___sub_accordion_3"><div class="card"><a data-toggle="collapse" data-target="#job_list___sub_collapse_3_1" aria-expanded="false" aria-controls="job_list___sub_collapse_3_1" href="#" class="job_list___sub_multi_heading"><div role="alert" class="card-header alert-success" id="job_list___sub_heading_3_1"><button class="btn btn-outline-success"><span class="job_id">3 : Job ID bd3cd73ae1be4add8bd67f8d20022f50</span></button></div></a><div aria-labelledby="job_list___sub_heading_3_1" data-parent="#job_list___sub_accordion_3" class="collapse job_list___sub_multi_collapse" id="job_list___sub_collapse_3_1"><div class="card-body"><div class="work-item"><div class="alert alert-success test-outcome" role="alert"><p>worker outcome: normal</p><p>test outcome: killed</p></div></div><pre class="location"><a href="pycharm://open?file=src\a_function.py&amp;line=2" class="text-secondary"><button class="btn btn-outline-dark">src\a_function.py, start pos: (2, 13), end pos: (2, 14)</button></a></pre><pre>operator: core/ReplaceBinaryOperator_Add_Div, occurrence: 0</pre><div class="alert alert-secondary"><pre class="diff">--- mutation diff ---
+--- asrc\a_function.py
++++ bsrc\a_function.py
+@@ -1,3 +1,3 @@
+ def add_numbers_and_inc(a, b):
+-    return a + b
++    return a / b
+ </pre></div><div class="alert alert-secondary"><pre class="diff">F.F
+======================================================================
+FAIL: test_WHEN_numbers_added_THEN_return_expected_value (test_one.Tests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ffv81422\AppData\Local\Temp\tmp6meszr0b\repo\tests\test_one.py", line 16, in test_WHEN_numbers_added_THEN_return_expected_value
+    self.assertEqual(result, 5)
+AssertionError: 1.5 != 5
+
+======================================================================
+FAIL: test_WHEN_numbers_added_THEN_return_int (test_one.Tests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ffv81422\AppData\Local\Temp\tmp6meszr0b\repo\tests\test_one.py", line 12, in test_WHEN_numbers_added_THEN_return_int
+    self.assertTrue(type(result) == int)
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+FAILED (failures=2)
+</pre></div></div></div></div></div><div class="mb-1" id="job_list___sub_accordion_4"><div class="card"><a data-toggle="collapse" data-target="#job_list___sub_collapse_4_1" aria-expanded="false" aria-controls="job_list___sub_collapse_4_1" href="#" class="job_list___sub_multi_heading"><div role="alert" class="card-header alert-success" id="job_list___sub_heading_4_1"><button class="btn btn-outline-success"><span class="job_id">4 : Job ID 48d5a85e25ee4c0c8abffde238fbdc73</span></button></div></a><div aria-labelledby="job_list___sub_heading_4_1" data-parent="#job_list___sub_accordion_4" class="collapse job_list___sub_multi_collapse" id="job_list___sub_collapse_4_1"><div class="card-body"><div class="work-item"><div class="alert alert-success test-outcome" role="alert"><p>worker outcome: normal</p><p>test outcome: killed</p></div></div><pre class="location"><a href="pycharm://open?file=src\a_function.py&amp;line=2" class="text-secondary"><button class="btn btn-outline-dark">src\a_function.py, start pos: (2, 13), end pos: (2, 14)</button></a></pre><pre>operator: core/ReplaceBinaryOperator_Add_FloorDiv, occurrence: 0</pre><div class="alert alert-secondary"><pre class="diff">--- mutation diff ---
+--- asrc\a_function.py
++++ bsrc\a_function.py
+@@ -1,3 +1,3 @@
+ def add_numbers_and_inc(a, b):
+-    return a + b
++    return a // b
+ </pre></div><div class="alert alert-secondary"><pre class="diff">F..
+======================================================================
+FAIL: test_WHEN_numbers_added_THEN_return_expected_value (test_one.Tests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ffv81422\AppData\Local\Temp\tmphdwmtury\repo\tests\test_one.py", line 16, in test_WHEN_numbers_added_THEN_return_expected_value
+    self.assertEqual(result, 5)
+AssertionError: 1 != 5
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+FAILED (failures=1)
+</pre></div></div></div></div></div><div class="mb-1" id="job_list___sub_accordion_5"><div class="card"><a data-toggle="collapse" data-target="#job_list___sub_collapse_5_1" aria-expanded="false" aria-controls="job_list___sub_collapse_5_1" href="#" class="job_list___sub_multi_heading"><div role="alert" class="card-header alert-success" id="job_list___sub_heading_5_1"><button class="btn btn-outline-success"><span class="job_id">5 : Job ID 56f295e498d34adbb83677c26fef084e</span></button></div></a><div aria-labelledby="job_list___sub_heading_5_1" data-parent="#job_list___sub_accordion_5" class="collapse job_list___sub_multi_collapse" id="job_list___sub_collapse_5_1"><div class="card-body"><div class="work-item"><div class="alert alert-success test-outcome" role="alert"><p>worker outcome: normal</p><p>test outcome: killed</p></div></div><pre class="location"><a href="pycharm://open?file=src\a_function.py&amp;line=2" class="text-secondary"><button class="btn btn-outline-dark">src\a_function.py, start pos: (2, 13), end pos: (2, 14)</button></a></pre><pre>operator: core/ReplaceBinaryOperator_Add_Mod, occurrence: 0</pre><div class="alert alert-secondary"><pre class="diff">--- mutation diff ---
+--- asrc\a_function.py
++++ bsrc\a_function.py
+@@ -1,3 +1,3 @@
+ def add_numbers_and_inc(a, b):
+-    return a + b
++    return a % b
+ </pre></div><div class="alert alert-secondary"><pre class="diff">F..
+======================================================================
+FAIL: test_WHEN_numbers_added_THEN_return_expected_value (test_one.Tests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ffv81422\AppData\Local\Temp\tmphdwmtury\repo\tests\test_one.py", line 16, in test_WHEN_numbers_added_THEN_return_expected_value
+    self.assertEqual(result, 5)
+AssertionError: 1 != 5
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+FAILED (failures=1)
+</pre></div></div></div></div></div><div class="mb-1" id="job_list___sub_accordion_6"><div class="card"><a data-toggle="collapse" data-target="#job_list___sub_collapse_6_1" aria-expanded="false" aria-controls="job_list___sub_collapse_6_1" href="#" class="job_list___sub_multi_heading"><div role="alert" class="card-header alert-success" id="job_list___sub_heading_6_1"><button class="btn btn-outline-success"><span class="job_id">6 : Job ID 7dea629508704688a5bcaaf18ab09cb6</span></button></div></a><div aria-labelledby="job_list___sub_heading_6_1" data-parent="#job_list___sub_accordion_6" class="collapse job_list___sub_multi_collapse" id="job_list___sub_collapse_6_1"><div class="card-body"><div class="work-item"><div class="alert alert-success test-outcome" role="alert"><p>worker outcome: normal</p><p>test outcome: killed</p></div></div><pre class="location"><a href="pycharm://open?file=src\a_function.py&amp;line=2" class="text-secondary"><button class="btn btn-outline-dark">src\a_function.py, start pos: (2, 13), end pos: (2, 14)</button></a></pre><pre>operator: core/ReplaceBinaryOperator_Add_Pow, occurrence: 0</pre><div class="alert alert-secondary"><pre class="diff">--- mutation diff ---
+--- asrc\a_function.py
++++ bsrc\a_function.py
+@@ -1,3 +1,3 @@
+ def add_numbers_and_inc(a, b):
+-    return a + b
++    return a ** b
+ </pre></div><div class="alert alert-secondary"><pre class="diff">F..
+======================================================================
+FAIL: test_WHEN_numbers_added_THEN_return_expected_value (test_one.Tests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ffv81422\AppData\Local\Temp\tmp6meszr0b\repo\tests\test_one.py", line 16, in test_WHEN_numbers_added_THEN_return_expected_value
+    self.assertEqual(result, 5)
+AssertionError: 9 != 5
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+FAILED (failures=1)
+</pre></div></div></div></div></div><div class="mb-1" id="job_list___sub_accordion_7"><div class="card"><a data-toggle="collapse" data-target="#job_list___sub_collapse_7_1" aria-expanded="false" aria-controls="job_list___sub_collapse_7_1" href="#" class="job_list___sub_multi_heading"><div role="alert" class="card-header alert-success" id="job_list___sub_heading_7_1"><button class="btn btn-outline-success"><span class="job_id">7 : Job ID 2ed7f95e4fba43768d0dd6903809b257</span></button></div></a><div aria-labelledby="job_list___sub_heading_7_1" data-parent="#job_list___sub_accordion_7" class="collapse job_list___sub_multi_collapse" id="job_list___sub_collapse_7_1"><div class="card-body"><div class="work-item"><div class="alert alert-success test-outcome" role="alert"><p>worker outcome: normal</p><p>test outcome: killed</p></div></div><pre class="location"><a href="pycharm://open?file=src\a_function.py&amp;line=2" class="text-secondary"><button class="btn btn-outline-dark">src\a_function.py, start pos: (2, 13), end pos: (2, 14)</button></a></pre><pre>operator: core/ReplaceBinaryOperator_Add_RShift, occurrence: 0</pre><div class="alert alert-secondary"><pre class="diff">--- mutation diff ---
+--- asrc\a_function.py
++++ bsrc\a_function.py
+@@ -1,3 +1,3 @@
+ def add_numbers_and_inc(a, b):
+-    return a + b
++    return a &gt;&gt; b
+ </pre></div><div class="alert alert-secondary"><pre class="diff">FF.
+======================================================================
+FAIL: test_WHEN_numbers_added_THEN_return_expected_value (test_one.Tests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ffv81422\AppData\Local\Temp\tmphdwmtury\repo\tests\test_one.py", line 16, in test_WHEN_numbers_added_THEN_return_expected_value
+    self.assertEqual(result, 5)
+AssertionError: 0 != 5
+
+======================================================================
+FAIL: test_WHEN_numbers_added_THEN_return_greater_than_0 (test_one.Tests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ffv81422\AppData\Local\Temp\tmphdwmtury\repo\tests\test_one.py", line 8, in test_WHEN_numbers_added_THEN_return_greater_than_0
+    self.assertTrue(result &gt; 0)
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+FAILED (failures=2)
+</pre></div></div></div></div></div><div class="mb-1" id="job_list___sub_accordion_8"><div class="card"><a data-toggle="collapse" data-target="#job_list___sub_collapse_8_1" aria-expanded="false" aria-controls="job_list___sub_collapse_8_1" href="#" class="job_list___sub_multi_heading"><div role="alert" class="card-header alert-success" id="job_list___sub_heading_8_1"><button class="btn btn-outline-success"><span class="job_id">8 : Job ID 7f97e6955af644988fdf156098d94ef0</span></button></div></a><div aria-labelledby="job_list___sub_heading_8_1" data-parent="#job_list___sub_accordion_8" class="collapse job_list___sub_multi_collapse" id="job_list___sub_collapse_8_1"><div class="card-body"><div class="work-item"><div class="alert alert-success test-outcome" role="alert"><p>worker outcome: normal</p><p>test outcome: killed</p></div></div><pre class="location"><a href="pycharm://open?file=src\a_function.py&amp;line=2" class="text-secondary"><button class="btn btn-outline-dark">src\a_function.py, start pos: (2, 13), end pos: (2, 14)</button></a></pre><pre>operator: core/ReplaceBinaryOperator_Add_LShift, occurrence: 0</pre><div class="alert alert-secondary"><pre class="diff">--- mutation diff ---
+--- asrc\a_function.py
++++ bsrc\a_function.py
+@@ -1,3 +1,3 @@
+ def add_numbers_and_inc(a, b):
+-    return a + b
++    return a &lt;&lt; b
+ </pre></div><div class="alert alert-secondary"><pre class="diff">F..
+======================================================================
+FAIL: test_WHEN_numbers_added_THEN_return_expected_value (test_one.Tests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ffv81422\AppData\Local\Temp\tmp6meszr0b\repo\tests\test_one.py", line 16, in test_WHEN_numbers_added_THEN_return_expected_value
+    self.assertEqual(result, 5)
+AssertionError: 12 != 5
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+FAILED (failures=1)
+</pre></div></div></div></div></div><div class="mb-1" id="job_list___sub_accordion_9"><div class="card"><a data-toggle="collapse" data-target="#job_list___sub_collapse_9_1" aria-expanded="false" aria-controls="job_list___sub_collapse_9_1" href="#" class="job_list___sub_multi_heading"><div role="alert" class="card-header alert-success" id="job_list___sub_heading_9_1"><button class="btn btn-outline-success"><span class="job_id">9 : Job ID 3e1d55135afc425f8edc8130a30d4374</span></button></div></a><div aria-labelledby="job_list___sub_heading_9_1" data-parent="#job_list___sub_accordion_9" class="collapse job_list___sub_multi_collapse" id="job_list___sub_collapse_9_1"><div class="card-body"><div class="work-item"><div class="alert alert-success test-outcome" role="alert"><p>worker outcome: normal</p><p>test outcome: killed</p></div></div><pre class="location"><a href="pycharm://open?file=src\a_function.py&amp;line=2" class="text-secondary"><button class="btn btn-outline-dark">src\a_function.py, start pos: (2, 13), end pos: (2, 14)</button></a></pre><pre>operator: core/ReplaceBinaryOperator_Add_BitOr, occurrence: 0</pre><div class="alert alert-secondary"><pre class="diff">--- mutation diff ---
+--- asrc\a_function.py
++++ bsrc\a_function.py
+@@ -1,3 +1,3 @@
+ def add_numbers_and_inc(a, b):
+-    return a + b
++    return a | b
+ </pre></div><div class="alert alert-secondary"><pre class="diff">F..
+======================================================================
+FAIL: test_WHEN_numbers_added_THEN_return_expected_value (test_one.Tests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ffv81422\AppData\Local\Temp\tmphdwmtury\repo\tests\test_one.py", line 16, in test_WHEN_numbers_added_THEN_return_expected_value
+    self.assertEqual(result, 5)
+AssertionError: 3 != 5
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+FAILED (failures=1)
+</pre></div></div></div></div></div><div class="mb-1" id="job_list___sub_accordion_10"><div class="card"><a data-toggle="collapse" data-target="#job_list___sub_collapse_10_1" aria-expanded="false" aria-controls="job_list___sub_collapse_10_1" href="#" class="job_list___sub_multi_heading"><div role="alert" class="card-header alert-success" id="job_list___sub_heading_10_1"><button class="btn btn-outline-success"><span class="job_id">10 : Job ID 69653009d28e4b2e91eb21e871ffa737</span></button></div></a><div aria-labelledby="job_list___sub_heading_10_1" data-parent="#job_list___sub_accordion_10" class="collapse job_list___sub_multi_collapse" id="job_list___sub_collapse_10_1"><div class="card-body"><div class="work-item"><div class="alert alert-success test-outcome" role="alert"><p>worker outcome: normal</p><p>test outcome: killed</p></div></div><pre class="location"><a href="pycharm://open?file=src\a_function.py&amp;line=2" class="text-secondary"><button class="btn btn-outline-dark">src\a_function.py, start pos: (2, 13), end pos: (2, 14)</button></a></pre><pre>operator: core/ReplaceBinaryOperator_Add_BitAnd, occurrence: 0</pre><div class="alert alert-secondary"><pre class="diff">--- mutation diff ---
+--- asrc\a_function.py
++++ bsrc\a_function.py
+@@ -1,3 +1,3 @@
+ def add_numbers_and_inc(a, b):
+-    return a + b
++    return a &amp; b
+ </pre></div><div class="alert alert-secondary"><pre class="diff">F..
+======================================================================
+FAIL: test_WHEN_numbers_added_THEN_return_expected_value (test_one.Tests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ffv81422\AppData\Local\Temp\tmp6meszr0b\repo\tests\test_one.py", line 16, in test_WHEN_numbers_added_THEN_return_expected_value
+    self.assertEqual(result, 5)
+AssertionError: 2 != 5
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+FAILED (failures=1)
+</pre></div></div></div></div></div><div class="mb-1" id="job_list___sub_accordion_11"><div class="card"><a data-toggle="collapse" data-target="#job_list___sub_collapse_11_1" aria-expanded="false" aria-controls="job_list___sub_collapse_11_1" href="#" class="job_list___sub_multi_heading"><div role="alert" class="card-header alert-success" id="job_list___sub_heading_11_1"><button class="btn btn-outline-success"><span class="job_id">11 : Job ID 9178998f29b547c793d9ad23d3d0680d</span></button></div></a><div aria-labelledby="job_list___sub_heading_11_1" data-parent="#job_list___sub_accordion_11" class="collapse job_list___sub_multi_collapse" id="job_list___sub_collapse_11_1"><div class="card-body"><div class="work-item"><div class="alert alert-success test-outcome" role="alert"><p>worker outcome: normal</p><p>test outcome: killed</p></div></div><pre class="location"><a href="pycharm://open?file=src\a_function.py&amp;line=2" class="text-secondary"><button class="btn btn-outline-dark">src\a_function.py, start pos: (2, 13), end pos: (2, 14)</button></a></pre><pre>operator: core/ReplaceBinaryOperator_Add_BitXor, occurrence: 0</pre><div class="alert alert-secondary"><pre class="diff">--- mutation diff ---
+--- asrc\a_function.py
++++ bsrc\a_function.py
+@@ -1,3 +1,3 @@
+ def add_numbers_and_inc(a, b):
+-    return a + b
++    return a ^ b
+ </pre></div><div class="alert alert-secondary"><pre class="diff">F..
+======================================================================
+FAIL: test_WHEN_numbers_added_THEN_return_expected_value (test_one.Tests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\ffv81422\AppData\Local\Temp\tmphdwmtury\repo\tests\test_one.py", line 16, in test_WHEN_numbers_added_THEN_return_expected_value
+    self.assertEqual(result, 5)
+AssertionError: 1 != 5
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+FAILED (failures=1)
+</pre></div></div></div></div></div></div></div></div></div></div><script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script><script type="text/javascript">$('div.job_list___sub_multi_collapse').on('shown.bs.collapse',  function () {    correct_behavior_functional_buttons();  });$('div.job_list___sub_multi_collapse').on('hidden.bs.collapse',  function () {    correct_behavior_functional_buttons();  });function correct_behavior_functional_buttons() {    var expand = false;    var collapse = false;    $('a.job_list___sub_multi_heading').each(function(index) {      if ($(this).attr('aria-expanded') == 'false') {        expand = true;        return false;      };    });    $('a.job_list___sub_multi_heading').each(function(index) {      if ($(this).attr('aria-expanded') == 'true') {        collapse = true;        return false;      };    });    if (expand) {      $('div#job_item_expand_all').css('display', 'inline-block');    } else {      $('div#job_item_expand_all').css('display', 'none');    };    if (collapse) {      $('div#job_item_collapse_all').css('display', 'inline-block');    } else {      $('div#job_item_collapse_all').css('display', 'none');    };  };correct_behavior_functional_buttons();</script></body></html>
